@@ -1,0 +1,84 @@
+:root {
+  --cell-size: 130px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  background: rgb(218, 214, 214);
+  font-size: 16px;}
+
+  #game-container {
+    height: 100%; 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;  
+  }
+
+.controls {
+  background-color:rgb(252, 231, 162);
+  font-size: 40px;
+  box-sizing: border-box;
+  border: 1px dashed #000;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.counter {
+  display:flex;
+  justify-content: space-between; 
+}
+
+.miss-counter {
+  margin-top: 10px;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px dashed #000;
+  background-color: rgba(223, 154, 148, 0.25);
+  width: 60px;
+  height: 60px;  
+}
+
+.hit-counter {
+  color: green;
+}
+.miss-counter {
+  color: red;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  border: 1px solid #000; 
+}
+
+.cell {
+  display: flex;
+  align-items:center;
+  justify-content: center; 
+  background-color: rgb(126, 255, 86);
+  border: 1px solid #000;
+}
+
+.map-tile {
+  width: var(--cell-size);
+  height: var(--cell-size);
+}
+
+img { 
+  display: block;
+}
